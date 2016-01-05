@@ -1,0 +1,26 @@
+export http_proxy=http://localhost:8080
+export https_proxy=http://localhost:8080
+
+export NVM_DIR="/Users/toby/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+source dnvm.sh
+#export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/Users/toby/Arcanist/arcanist/bin:$PATH"
+source /Users/toby/Arcanist/arcanist/resources/shell/bash-completion
+#eval "$(rbenv init -)"
+
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOPATH=$HOME/Devel/goprojects
+export PATH=$PATH:$GOPATH/bin
+export MONO_GAC_PREFIX="/usr/local"
+
+#export PATH=$HOME/.rakudobrew/bin:$PATH
+eval "$(/Users/toby/.rakudobrew/bin/rakudobrew init -)"
