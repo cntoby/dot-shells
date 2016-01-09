@@ -4,11 +4,10 @@ export https_proxy=http://localhost:8080
 export NVM_DIR="/Users/toby/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-source dnvm.sh
 #export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/toby/Arcanist/arcanist/bin:$PATH"
-source /Users/toby/Arcanist/arcanist/resources/shell/bash-completion
+[ -s $HOME/Arcanist/aranist/resources/shell/bash-completion ] && source /Users/toby/Arcanist/arcanist/resources/shell/bash-completion
 #eval "$(rbenv init -)"
 
 export RBENV_ROOT=/usr/local/var/rbenv
@@ -24,6 +23,6 @@ export PATH=$PATH:$HOME/Library/Haskell/bin
 export MONO_GAC_PREFIX="/usr/local"
 
 #export PATH=$HOME/.rakudobrew/bin:$PATH
-eval "$(/Users/toby/.rakudobrew/bin/rakudobrew init -)"
+[ -s $HOME/.rakudobrew/bin/rakudobrew ] && eval "$(/Users/toby/.rakudobrew/bin/rakudobrew init -)"
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
