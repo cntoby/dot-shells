@@ -18,9 +18,12 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
-export GOPATH=$HOME/Devel/goprojects
+export GOPATH=$HOME/Go
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$HOME/Library/Haskell/bin
 export MONO_GAC_PREFIX="/usr/local"
 
 #export PATH=$HOME/.rakudobrew/bin:$PATH
 eval "$(/Users/toby/.rakudobrew/bin/rakudobrew init -)"
+
+export ANDROID_HOME=/usr/local/opt/android-sdk
