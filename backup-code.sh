@@ -1,6 +1,6 @@
 function backup-code() {
     CODEPATH=~/Devel/src/code
-    CLOUDPATH=~/我的坚果云/code
+    CLOUDPATH=~/Nutstore/Nutstore/code
     pathParent=$(dirname ${CODEPATH})
     FNAME=$(basename ${CODEPATH})
     #    cd ${pathParent}
