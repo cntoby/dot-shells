@@ -98,3 +98,4 @@ function load() {
 load ~/shells/_env
 
 load ~/shells/*.sh
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
