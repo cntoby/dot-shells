@@ -28,3 +28,13 @@ export MONO_GAC_PREFIX="/usr/local"
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export PATH=$PATH:/Applications/calibre.app/Contents/MacOS
+export PATH=$PATH:~/.cargo/bin
+sys=$(uname)
+case $sys in
+  Linux)
+    export RUST_SRC_PATH=~/src/rust/src
+    ;;
+  Darwin)
+    export RUST_SRC_PATH=~/Devel/src/rust/src
+    ;;
+esac
