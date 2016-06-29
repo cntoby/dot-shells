@@ -1,5 +1,7 @@
-export http_proxy=http://localhost:8080
-export https_proxy=http://localhost:8080
+if [ "$USE_PROXY" != "" ]; then
+   export http_proxy=http://localhost:8080
+   export https_proxy=http://localhost:8080
+fi
 
 export NVM_DIR="/Users/toby/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
