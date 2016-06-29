@@ -1,3 +1,6 @@
+if [ "$START_DOCKER" == "" ]; then
+	return
+fi
 if which docker-machine > /dev/null; then
     VM=$(docker-machine ls 2>/dev/null |awk 'NR==2{print $1}') # get first docker vm as default
     if [ "$VM" != "" ]; then
